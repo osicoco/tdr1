@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pérdida de la Inocencia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Actividad Interactiva: Pérdida de la Inocencia</h1>
+    <p>Elige cómo el niño interactúa con la tecnología, y observa cómo afecta su nivel de inocencia.</p>
+
+    <div class="bar-container">
+        <div id="innocenceBar" class="bar"></div>
+    </div>
+
+    <h3>Nivel de Inocencia: <span id="innocenceLevel">100</span>%</h3>
+
+    <button onclick="reduceInnocence(10, 'Ver videos en YouTube')">Ver videos en YouTube</button>
+    <button onclick="reduceInnocence(20, 'Usar redes sociales')">Usar redes sociales</button>
+    <button onclick="reduceInnocence(30, 'Jugar videojuegos violentos')">Jugar videojuegos violentos</button>
+    <button onclick="reduceInnocence(40, 'Ver noticias perturbadoras')">Ver noticias perturbadoras</button>
+    <button onclick="reduceInnocence(50, 'Exposición a contenidos inapropiados')">Exposición a contenidos inapropiados</button>
+
+    <p id="activityLog"></p>
+    <p id="emotionalFeedback"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
